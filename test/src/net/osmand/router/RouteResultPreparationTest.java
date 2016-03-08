@@ -70,6 +70,7 @@ public class RouteResultPreparationTest {
 
     @Parameterized.Parameters(name = "{index}: {0}")
     public static Collection<Object[]> data() {
+
         Object start = new LatLon(45.6971206184178, 35.51630312204361);
         Object end = new LatLon(45.6952846638807, 35.51303619146347);
         Object expectedResults = new HashMap<Long, String>() {
@@ -81,7 +82,9 @@ public class RouteResultPreparationTest {
         };
 
         return Arrays.asList(new Object[][]{
-                {"Amstelveenseweg", start, end, expectedResults}
+                {"Amstelveenseweg", start, end, expectedResults},
+                {"Amstelveenseweg2", start, end, expectedResults},
+                {"Amstelveenseweg3", start, end, expectedResults}
         });
     }
 
