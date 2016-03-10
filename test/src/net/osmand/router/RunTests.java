@@ -41,6 +41,7 @@ public class RunTests {
             e.printStackTrace();
         }
 
+
         Result result = JUnitCore.runClasses(RouteResultPreparationTest.class);
         for (Failure fail : result.getFailures()) {
             System.out.println("TEST FAILED!!! " + fail.toString());

@@ -38,6 +38,10 @@ public class TestEntry {
         this.expectedResults = expectedResults;
     }
 
+    public String getTestName() {
+        return testName;
+    }
+
     public TestEntry(String testName, LatLon startPoint, LatLon endPoint, Map<Long, String> expectedResults) {
         this.testName = testName;
         this.startPoint = startPoint;
